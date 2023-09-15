@@ -31,3 +31,19 @@ Activer la Windows Authentification  et activer l'extended Protection dans les p
 
 
 Le SSO est désormais activé sur RD Web Access.
+
+Pour activer le SSO sur nos connexions session host, nous avons la possibilité de le faire par une GPO bien pratique dans "Computer Configuration/Policies/Administrative Templates/System/Credential Delegation"
+
+![image](https://github.com/GleissenJohnson/SSO_RDS/assets/115966414/a3de0b2f-eeae-4593-aa57-42da8a59a0b5)
+
+On sélectionne les FQDN de nos session host comme requis par la GPO.
+
+![image](https://github.com/GleissenJohnson/SSO_RDS/assets/115966414/574838a1-e015-4d87-b14c-f9441a6af0f9)
+
+
+Puis on peut sélectionner une url RemoteApp par défaut sur nos postes de domaine, leur évitant de saisir à chaque fois l'URL dans "User Configuration/Policies/Administrative Templates/Windows Components/Remote Desktop Services/RemoteAppe and Desktop Connections"
+
+![image](https://github.com/GleissenJohnson/SSO_RDS/assets/115966414/e96df6ed-75ac-4d8d-abf7-a8ce785c09a8)
+
+
+
